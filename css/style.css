@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.dark-theme .input-container {
+    background-color: #444;
+    border-color: #555;
+}
+
+.input-container .form-group {
+    flex: 1;
+    margin: 0 10px;
+}
+
+#addPlayer {
+    height: calc(100% - 24px);
+}
+
+.teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.team {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    background-color: #f9f9f9;
+    margin: 10px;
+    box-sizing: border-box;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dark-theme .team {
+    background-color: #555;
+    border-color: #666;
+}
+
+.player-list-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .player-list-container {
+    background-color: #444;
+    border-color: #555;
+}
+
+.player-list-title {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.player-list {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.player-list div {
+    padding: 5px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.dark-theme .footer {
+    background-color: #444;
+    border-top-color: #555;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#chartsContainer {
+    margin-top: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
